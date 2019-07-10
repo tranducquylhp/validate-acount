@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function validateaAcount(acount) {
+            let reg = /^[_a-z0-9]{6,}$/;
+            return reg.test(acount);
+        }
+        let arrayAcount = ['123abc','_abc123','______','123456','abcdefg','@','12345','1234_','abcde '];
+        for (let i=0; i<arrayAcount.length; i++){
+            document.write('Acount '+ arrayAcount[i]+" is "+validateaAcount(arrayAcount[i])+'<br>');
+        }
+    </script>
+</body>
+</html>
